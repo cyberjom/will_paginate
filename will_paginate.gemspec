@@ -1,9 +1,10 @@
 # encoding: utf-8
-require File.expand_path('../lib/will_paginate/version', __FILE__)
+# require File.expand_path('../lib/will_paginate/version', __FILE__)
 
 Gem::Specification.new do |s|
   s.name    = 'will_paginate'
-  s.version = WillPaginate::VERSION::STRING
+  # s.version = WillPaginate::VERSION::STRING
+  s.version = '3.0.pre3'
   s.date    = '2010-02-05'
   
   s.summary = "Adaptive pagination plugin for web frameworks and other applications"
@@ -18,5 +19,5 @@ Gem::Specification.new do |s|
   s.extra_rdoc_files = ['README.rdoc', 'LICENSE', 'CHANGELOG.rdoc']
   
   s.files = Dir['Rakefile', '{bin,lib,test,spec}/**/*', 'README*', 'LICENSE*']
-  s.files &= `git ls-files -z`.split("\0") if `type -t git 2>/dev/null || which git 2>/dev/null` && $?.success?
+  # s.files &= `git ls-files -z`.split("\0") if `type -t git 2>/dev/null || which git 2>/dev/null` && $?.success?
 end
